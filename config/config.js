@@ -18,6 +18,10 @@ export default {
       {
         path: '/helloworld',
         component: 'Helloworld'
+      }, 
+      {
+        path: '/list',
+        component: '../page/list'
       },
       {
         path:'/dashboard',

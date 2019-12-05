@@ -1,6 +1,6 @@
 const random_jokes = [
   {
-    setup: 'What is the object oriented way to get wealthy ?',
+      setup: 'What is the object oriented way to get wealthy ?',
       punchline: 'Inheritance',
   },
   {
@@ -17,7 +17,7 @@ let random_joke_call_count = 0;
 
 export default {
   'get /posts/1': function (req, res) {
-    const responseObj = random_jokes[random_joke_call_count % random_jokes.length];
+    const responseObj = random_jokes
     random_joke_call_count += 1;
     setTimeout(() => {
       res.json(responseObj);
